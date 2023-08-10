@@ -1,0 +1,181 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+}
+
+:root{
+    --verbal-text: hsl(166, 100%, 37%);
+    --visual-text: hsl(234, 85%, 45%);
+    --reaction-text:hsl(0, 100%, 67%);
+    --memory-text: hsl(39, 100%, 56%);
+    --verbal-background-color: hsla(166, 100%, 37%,0.08);
+    --visual-background-color: hsla(234, 85%, 45%,0.08);
+    --reaction-background-color:hsla(0, 100%, 67%,0.08);
+    --memory-background-color: hsla(39, 100%, 56%,0.08);
+    
+    
+}
+.page{
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 500px;
+    height: 50%;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.left{
+    width: 50%;
+    height:100% ;
+    background-image: linear-gradient( hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6% 5% 0  5%;  
+    justify-content:space-between ;
+    border-radius: 25px;
+}
+.left h4{
+    font-size: 0.9em;
+    color: hsla(20, 100%, 100%,0.7 );
+}
+
+.left .num{
+    width: 120px;
+    height: 120px;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 100%;
+    padding: 30px 40px;
+    font-size: 2.5em;
+    color: white;
+    font-weight: bold;
+   
+}
+.left .num span{
+   display: block;
+   font-size: 10px;
+   margin-left: 0.8em;
+   color: hsla(241, 100%, 89%,0.6);
+}
+.art .gre{
+    min-height: fit-content;
+    min-width: fit-content;
+text-align: center;
+font-size: 20px;
+margin-bottom: 2em;
+
+/* background-color: blueviolet; */
+color: hsl(100, 100%, 100%);
+font-weight: 900;
+
+
+}
+
+.left .art p span{
+    width: 140px;
+    height: fit-content;
+    display: block;
+    font-size: 11px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 100;
+    color: hsla(221, 100%, 96%,0.6);
+    
+    
+    
+}
+
+
+
+.right{
+    width: 50%;
+    height:100% ;
+    display: flex;
+    flex-direction: column;
+    padding: 6% 5% 5%  7%;    
+    justify-content:space-between ;
+    background-color: white;
+    border-radius: 25px;
+}
+ .right .items{
+    width: 95%;
+    height: 66%;
+    /* background-color: brown; */
+    margin-bottom: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+ }
+
+ .right .item{
+    width: 100%;
+    height: 35px;
+    /* background-color: yellowgreen; */
+    font-size: 11px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+}
+.right .item img{
+    height: 1.2em;
+}
+.item h4{
+    margin-right:5em;
+}
+.verbal h4,.visual h4{
+    margin-right: 6em;
+}
+.item .mark{
+    margin-right: 1em;
+    color: black;
+    font-weight: bolder;
+}
+.item span:nth-child(1){
+    color: gray;
+}
+.reaction{
+    background-color: var(--reaction-background-color);
+    color: var(--reaction-text);
+    
+}
+.memory{
+    background-color: var(--memory-background-color);
+    color: var(--memory-text);
+}
+.verbal{
+    background-color: var(--verbal-background-color);
+    color: var(--verbal-text);
+}
+.visual{
+    background-color: var(--visual-background-color);
+    color: var(--visual-text);
+}
+
+ button{
+    height: 2.5em;
+    width: 100%;
+    background-color:hsla(0, 0%, 0%,0.8) ;
+    border-radius: 20px;
+    margin-bottom: 1em;
+    border: none;
+    color: hsl(0, 100%, 100%);
+    font-size: 0.8em;
+}
